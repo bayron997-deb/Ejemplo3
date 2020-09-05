@@ -15,4 +15,12 @@ public class Professor extends Person {
 
     public Professor() {
     }
+
+    public String getSalario() {
+        return salario;
+    }
+
+    public void setSalario(String salario) {
+        this.salario = salario;
+    }
 }

@@ -34,4 +34,20 @@ public class Student extends Person {
     public void setSeminarsTaken() {
 
     }
+
+    public String getStudentID() {
+        return studentID;
+    }
+
+    public void setStudentID(String studentID) {
+        this.studentID = studentID;
+    }
+
+    public double getAverageRank() {
+        return averageRank;
+    }
+
+    public void setAverageRank(double averageRank) {
+        this.averageRank = averageRank;
+    }
 }
