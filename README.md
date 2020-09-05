@@ -20,4 +20,4 @@ Cada alumno tendra un ID y sus notas que deben ingresarlas.
 
 Cada profesor se le asignara un salario
 
-Estos 2 entes estaran en una ubicacion geografica determinada por la clase Addres que vendria siendo el colegio.
+Profesor y alumno sevan a gestionar en la clase colegio para añadir alumnos y profesores.
