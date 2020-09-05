@@ -14,6 +14,12 @@ public class Student {
      * promedio notas
      */
     private double averageRank;
+    //constructores
+
+    public Student() {
+    }
+
+    //metodos
 
     /**
      * ver si puede inscribirse

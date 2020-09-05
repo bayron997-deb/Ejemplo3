@@ -18,6 +18,9 @@ public class Person {
      * email persona
      */
     protected String emailAddress;
+
     //constructores
 
+    public Person() {
+    }
 }

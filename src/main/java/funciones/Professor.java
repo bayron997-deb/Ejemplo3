@@ -5,9 +5,14 @@ package funciones;
  */
 public class Professor {
     //atributos
-    
+
     /**
-     *  salario profesor
+     * salario profesor
      */
     private String salario;
+
+    //constuctores
+
+    public Professor() {
+    }
 }
