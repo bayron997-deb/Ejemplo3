@@ -20,7 +20,14 @@ public class colegio {
 
     public colegio() {
     }
-    //metodos
 
+    //metodos
+    public void nuevoProfesor(String name, String phoneNumber, String emailAddress, String salary) {
+        Professor nuevo = new Professor(name,phoneNumber,emailAddress,salary);
+        listaProfesores.add(nuevo);
+
+
+
+    }
 
 }

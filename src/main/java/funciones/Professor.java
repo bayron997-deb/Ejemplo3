@@ -11,11 +11,6 @@ public class Professor extends Person {
      */
     private String salario;
 
-    //constuctores
-
-    public Professor() {
-    }
-
     public String getSalario() {
         return salario;
     }
@@ -23,4 +18,14 @@ public class Professor extends Person {
     public void setSalario(String salario) {
         this.salario = salario;
     }
+
+    //constuctores
+    public Professor(String name, String numero, String email, String salario) {
+        this.name =name;
+        this.PhoneNumber= numero;
+        this.emailAddress = email;
+        this.salario = salario;
+    }
+
+
 }
