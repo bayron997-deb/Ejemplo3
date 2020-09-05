@@ -3,7 +3,7 @@ package funciones;
 /**
  * tiene atributos de un estudiante
  */
-public class Student {
+public class Student extends Person {
     //Atributos
 
     /**
