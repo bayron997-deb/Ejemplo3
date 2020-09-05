@@ -100,7 +100,8 @@ public class menuColegio extends JFrame {
         botonAgregarProfesor.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+            addProfessor addP = new addProfessor();
+            addP.setVisible(true);
             }
         });
         /**
