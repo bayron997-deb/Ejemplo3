@@ -8,36 +8,36 @@ public class Address {
     //Atributos
 
     /**
-     * nombre persona
+     * calle persona
      */
     private String street;
     /**
-     * nombre persona
+     * ciudad persona
      */
     private String city;
     /**
-     * nombre persona
+     * estado persona
      */
     private String state;
     /**
-     * nombre persona
+     * codigo postal  persona
      */
     private String postalCode;
     /**
-     * nombre persona
+     * pais persona
      */
     private String country;
 
     //metodos
 
     /**
-     * nombre persona
+     * validar algo
      */
     public Boolean validate(){
         return true;
     }
     /**
-     * nombre persona
+     * idk
      */
     public void outPutAsLabel(){
 
