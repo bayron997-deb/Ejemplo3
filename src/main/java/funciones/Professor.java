@@ -20,11 +20,16 @@ public class Professor extends Person {
     }
 
     //constuctores
-    public Professor(String name, String numero, String email, String salario) {
+    public Professor(String name, String numero, String email, String salario, String calle , String ciudad , String estado, String codigoPostal, String pais) {
         this.name =name;
         this.PhoneNumber= numero;
         this.emailAddress = email;
         this.salario = salario;
+        this.direccion.setStreet(calle);
+        this.direccion.setCity(ciudad);
+        this.direccion.setState(estado);
+        this.direccion.setPostalCode(codigoPostal);
+        this.direccion.setCountry(pais);
     }
 
 

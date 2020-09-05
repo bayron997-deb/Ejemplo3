@@ -16,12 +16,17 @@ public class Student extends Person {
     private double averageRank;
     //constructores
 
-    public Student(String name, String numero, String email, String studentID, double averageRank) {
+    public Student(String name, String numero, String email, String studentID, double averageRank, String calle, String ciudad, String estado, String codigoPostal, String pais) {
         this.averageRank = averageRank;
         this.studentID = studentID;
         this.emailAddress = email;
         this.name = name;
         this.PhoneNumber = numero;
+        this.direccion.setStreet(calle);
+        this.direccion.setCity(ciudad);
+        this.direccion.setState(estado);
+        this.direccion.setPostalCode(codigoPostal);
+        this.direccion.setCountry(pais);
     }
 
     //metodos

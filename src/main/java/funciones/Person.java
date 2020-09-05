@@ -5,6 +5,7 @@ package funciones;
  */
 
 public class Person {
+    protected Address direccion = new Address();
     //Atributos
     /**
      * nombre persona
