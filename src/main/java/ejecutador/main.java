@@ -11,7 +11,7 @@ import guis.menuColegio;
 public class main {
     public static void main(String[] args) {
         menuColegio v = new menuColegio();
-        v.setVisible();
+        v.setVisible(true);
     }
 }
 
