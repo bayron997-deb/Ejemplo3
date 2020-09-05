@@ -25,9 +25,10 @@ public class colegio {
     public void nuevoProfesor(String name, String phoneNumber, String emailAddress, String salary) {
         Professor nuevo = new Professor(name,phoneNumber,emailAddress,salary);
         listaProfesores.add(nuevo);
-
-
-
+    }
+    public void nuevoEstudiante(String name, String numero, String email, String studentID, double averageRank) {
+        Student nuevo = new Student(name,numero,email,studentID,averageRank);
+        listaEstudiantes.add(nuevo);
     }
 
 }
