@@ -42,13 +42,17 @@ public class colegio {
      * lista para ver profesores
      */
     public void verprofesores() {
-
+        for (int i = 0; i <listaProfesores.size() ; i++) {
+            System.out.println(listaProfesores.get(i).toString());
+        }
     }
     /**
      * lista para ver estudiantes
      */
     public void verestudiantes(){
-
+        for (int i = 0; i <listaEstudiantes.size() ; i++) {
+            System.out.println(listaEstudiantes.get(i).toString());
+        }
     }
 
 }
