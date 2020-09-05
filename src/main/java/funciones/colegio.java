@@ -25,16 +25,16 @@ public class colegio {
      * Metodo que se encarga de añadir un nuevo profesor a la lista de profesores
      */
     //metodos
-    public void nuevoProfesor(String name, String phoneNumber, String emailAddress, String salary) {
-        Professor nuevo = new Professor(name, phoneNumber, emailAddress, salary);
+    public void nuevoProfesor(String name, String numero, String email, String salario, String calle , String ciudad , String estado, String codigoPostal, String pais) {
+        Professor nuevo = new Professor(name,numero,email,salario,calle,ciudad,estado,codigoPostal,pais);
         listaProfesores.add(nuevo);
     }
 
     /**
      * Metodo que se encarga de añadir un nuevo estudiante a la lista
      */
-    public void nuevoEstudiante(String name, String numero, String email, String studentID, double averageRank) {
-        Student nuevo = new Student(name, numero, email, studentID, averageRank);
+    public void nuevoEstudiante(String name, String numero, String email, String studentID, double averageRank, String calle, String ciudad, String estado, String codigoPostal, String pais) {
+        Student nuevo = new Student(name, numero, email, studentID, averageRank, calle,ciudad,estado,codigoPostal,pais);
         listaEstudiantes.add(nuevo);
     }
 
