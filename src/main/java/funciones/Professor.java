@@ -31,6 +31,11 @@ public class Professor extends Person {
         this.direccion.setPostalCode(codigoPostal);
         this.direccion.setCountry(pais);
     }
-
-
+    /**
+     * Formato salida
+     */
+    @Override
+    public String toString() {
+        return super.toString()+" salario: "+salario;
+    }
 }

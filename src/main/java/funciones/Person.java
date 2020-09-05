@@ -48,4 +48,11 @@ public class Person {
     public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
     }
+    /**
+     * formato salida
+     */
+    @Override
+    public String toString() {
+        return "nombre: "+name+", numero: "+PhoneNumber+", email: "+emailAddress;
+    }
 }

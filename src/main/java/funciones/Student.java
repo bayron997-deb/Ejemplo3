@@ -60,4 +60,11 @@ public class Student extends Person {
     public void setAverageRank(double averageRank) {
         this.averageRank = averageRank;
     }
+    /**
+     * Formato salida
+     */
+    @Override
+    public String toString() {
+    return super.toString()+" studentID: "+studentID+", Promedio: "+averageRank;
+    }
 }
