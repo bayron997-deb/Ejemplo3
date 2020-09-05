@@ -2,6 +2,8 @@ package guis;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class menuColegio extends JFrame {
     // Atributos
@@ -84,7 +86,59 @@ public class menuColegio extends JFrame {
         //añadir panel a la ventana
         add(panel);
 
+        /**
+         * AccionListener para agregar estudiante
+         */
+        botonAgregarAlumno.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            }
+        });
+        /**
+         * AccionListener para agregar profesores
+         */
+        botonAgregarProfesor.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
+            }
+        });
+        /**
+         * AccionListener para mostrar lista de estudiantes
+         */
+        botonlistaestudiantes.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        /**
+         * AccionListener para mostrar lista de profesores
+         */
+        botonlistaprofes.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        /**
+         * AccionListener para sair
+         */
+        botonSalir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Crea el panel para pedir confirmación
+                int n = JOptionPane.showConfirmDialog(panel.getParent(),
+                        "¿desea salir?",
+                        "Salir del programa",
+                        JOptionPane.YES_NO_OPTION);
+                // Si el usuario escoge "Sí"
+                if (n == JOptionPane.YES_OPTION) {
+                    // Sale del programa y retorna 0
+                    System.exit(0);
+                }
+            }
+        });
     }
 
 
