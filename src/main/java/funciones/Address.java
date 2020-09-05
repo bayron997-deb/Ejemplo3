@@ -27,6 +27,10 @@ public class Address {
      * pais persona
      */
     private String country;
+    //constructores
+
+    public Address() {
+    }
 
     //metodos
 
