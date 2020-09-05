@@ -1,6 +1,10 @@
 package guis;
 
+import ejecutador.main;
+
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class addPerson extends JFrame{
     // Atributos
@@ -9,55 +13,87 @@ public class addPerson extends JFrame{
      */
     protected JPanel panel;
     /**
-     * nombre del programa
-     */
-    protected JLabel labelIngreseNombre;
-    /**
      *  ingresar nombre
      */
-    protected JTextField textFieldname;
+    protected JLabel labelIngreseNombre = new JLabel("Ingrese Nombre");
+    protected JTextField textFieldname= new JTextField(10);
     /**
      *  ingresar numero
      */
-    protected JTextField textPhoneNumber;
+    protected JLabel labelPhoneNumber = new JLabel("Ingrese Numero Telefonico");
+    protected JTextField textPhoneNumber= new JTextField(10);
     /**
      * ingresar email
      */
-    protected JTextField textFieldemail;
+    protected JLabel labelemail = new JLabel("Ingrese email");
+    protected JTextField textFieldemail= new JTextField(10);
     /**
      *  ingresar calle
      */
-    protected JTextField textFieldStreet;
+    protected JLabel labelStreet = new JLabel("Ingrese calle");
+    protected JTextField textFieldStreet=new JTextField(10);
     /**
      *  ingresar ciudad
      */
-    protected JTextField textPhoneCiudad;
+    protected JLabel labelcity = new JLabel("Ingrese ciudad");
+    protected JTextField textFieldcity=new JTextField(10);
     /**
      * ingresar estado
      */
-    protected JTextField textFielEstado;
+    protected JLabel labelEstate = new JLabel("Ingrese Estado");
+    protected JTextField textFielEstate=new JTextField(10);
     /**
      * ingresar codigo postal
      */
-    protected JTextField textFielPostalCode;
+    protected JLabel labelPostalcode = new JLabel("Ingrese codigo postal");
+    protected JTextField textFielPostalCode=new JTextField(10);
     /**
      * ingresar pais
      */
-    protected JTextField textFielCountry;
+    protected JLabel labelCountry = new JLabel("Ingrese pais");
+    protected JTextField textFielCountry=new JTextField(10);
     /**
      * boton guardar
      */
-    protected JButton guardar;
-    /**
-     * configuraciones varias de la ventana de creacion
-     */
+    protected JButton guardar = new JButton("Guardar");
+
     public addPerson(){
 
     }
+    /**
+     * configuraciones varias de la ventana de creacion
+     */
     public void conf(){
         // La ventana inicia centrada
         setLocationRelativeTo(null);
         // cerrar ventana
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
+    /**
+     * Metodo para iniciar la ventana y agregar atributos al panel
+     */
+    public void iniciar(){
+        //crear ventana nueva
+        panel = new JPanel();
+        panel.add(labelIngreseNombre);
+        panel.add(textFieldname);
+        panel.add(labelPhoneNumber);
+        panel.add(textPhoneNumber);
+        panel.add(labelemail);
+        panel.add(textFieldemail);
+        panel.add(labelStreet);
+        panel.add(textFieldStreet);
+        panel.add(labelcity);
+        panel.add(textFieldcity);
+        panel.add(labelEstate);
+        panel.add(textFielEstate);
+        panel.add(labelPostalcode);
+        panel.add(textFielPostalCode);
+        panel.add(labelCountry);
+        panel.add(textFielCountry);
+        panel.add(guardar);
+        });
+    }
+
+
 }
