@@ -93,6 +93,5 @@ public class addPerson extends JFrame {
         panel.add(textFielPostalCode);
         panel.add(labelCountry);
         panel.add(textFielCountry);
-        panel.add(guardar);
     }
 }

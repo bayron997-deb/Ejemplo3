@@ -11,7 +11,7 @@ public class addProfessor extends addPerson {
     /**
      * ingresar salario
      */
-    private JButton jButtonsalario = new JButton("ingrese salario");
+    private JLabel jButtonsalario = new JLabel("ingrese salario");
     private JTextField textFielsalario = new JTextField(10);
 
     //constructor
@@ -19,7 +19,7 @@ public class addProfessor extends addPerson {
         iniciar();
         //caracterizticas varias de la ventana
         setTitle("Nuevo profesor");
-        setSize(300, 200);
+        setSize(200, 600);
         conf();
     }
 
@@ -28,6 +28,7 @@ public class addProfessor extends addPerson {
         //añadir botones al panel
         panel.add(jButtonsalario);
         panel.add(textFielsalario);
+        panel.add(guardar);
         //añadir panel a la ventana
         add(panel);
         guardar.addActionListener(new ActionListener() {
