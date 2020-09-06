@@ -13,10 +13,10 @@ public class Student extends Person {
     /**
      * promedio notas
      */
-    private double averageRank;
+    private String averageRank;
     //constructores
 
-    public Student(String name, String numero, String email, String studentID, double averageRank, String calle, String ciudad, String estado, String codigoPostal, String pais) {
+    public Student(String name, String numero, String email, String studentID, String averageRank, String calle, String ciudad, String estado, String codigoPostal, String pais) {
         this.averageRank = averageRank;
         this.studentID = studentID;
         this.emailAddress = email;
@@ -53,11 +53,11 @@ public class Student extends Person {
         this.studentID = studentID;
     }
 
-    public double getAverageRank() {
+    public String getAverageRank() {
         return averageRank;
     }
 
-    public void setAverageRank(double averageRank) {
+    public void setAverageRank(String averageRank) {
         this.averageRank = averageRank;
     }
     /**

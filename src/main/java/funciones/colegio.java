@@ -33,7 +33,7 @@ public class colegio {
     /**
      * Metodo que se encarga de añadir un nuevo estudiante a la lista
      */
-    public void nuevoEstudiante(String name, String numero, String email, String studentID, double averageRank, String calle, String ciudad, String estado, String codigoPostal, String pais) {
+    public void nuevoEstudiante(String name, String numero, String email, String studentID, String averageRank, String calle, String ciudad, String estado, String codigoPostal, String pais) {
         Student nuevo = new Student(name, numero, email, studentID, averageRank, calle,ciudad,estado,codigoPostal,pais);
         listaEstudiantes.add(nuevo);
     }
