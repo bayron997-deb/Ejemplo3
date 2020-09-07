@@ -11,7 +11,7 @@ public class AddStudent extends AddPerson {
     /**
      * ingresar studentID
      */
-    private JLabel jLabelstudentID = new JLabel("ingrese identificacion de estudiante");
+    private JLabel jLabelstudentID = new JLabel("ingrese ID de estudiante");
     private JTextField textFieldstudentId = new JTextField(10);
     /**
      * ingresar promedio
