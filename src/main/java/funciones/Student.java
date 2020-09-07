@@ -36,9 +36,9 @@ public class Student extends Person {
      */
     public String isEligibleToRoll() {
         if (averageRank > 5) {
-            return "Aceptado";
+            return " Aceptado";
         }else{
-            return "rechazado";
+            return " rechazado";
         }
     }
 
@@ -69,6 +69,6 @@ public class Student extends Person {
      */
     @Override
     public String toString() {
-    return super.toString()+" studentID: "+studentID+", Promedio: "+averageRank+isEligibleToRoll();
+    return super.toString()+direccion.toString()+studentID+", Promedio: "+averageRank+isEligibleToRoll();
     }
 }
