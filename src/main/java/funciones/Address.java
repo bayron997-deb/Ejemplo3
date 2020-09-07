@@ -90,6 +90,6 @@ public class Address {
     @Override
     public String toString() {
 
-        return "Direccion: "+street+", ciudad: "+city+", estado: "+state+", codigo postal: "+postalCode+", pais: "+country;
+        return "calle: "+street+", ciudad: "+city+", estado: "+state+", codigo postal: "+postalCode+", pais: "+country;
     }
 }
