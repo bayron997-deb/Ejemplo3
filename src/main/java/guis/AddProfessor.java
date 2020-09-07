@@ -1,26 +1,21 @@
 package guis;
 
-import ejecutador.main;
+import ejecutador.Main;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class addStudent extends addPerson {
-    // Atributos
+public class AddProfessor extends AddPerson {
+    //Atributos
     /**
-     * ingresar studentID
+     * ingresar salario
      */
-    private JLabel jLabelstudentID = new JLabel("ingrese identificacion de estudiante");
-    private JTextField textFieldstudentId = new JTextField(10);
-    /**
-     * ingresar promedio
-     */
-    private JLabel jLabelaverageRank = new JLabel("ingrese salario");
-    private JTextField textFieldaverageRank = new JTextField(10);
+    private JLabel jButtonsalario = new JLabel("ingrese salario");
+    private JTextField textFielsalario = new JTextField(10);
 
     //constructor
-    public addStudent() {
+    public AddProfessor() {
         iniciar();
         //caracterizticas varias de la ventana
         setTitle("Nuevo profesor");
@@ -31,23 +26,20 @@ public class addStudent extends addPerson {
     public void iniciar() {
         super.iniciar();
         //añadir botones al panel
-        panel.add(jLabelstudentID);
-        panel.add(textFieldstudentId);
-        panel.add(jLabelaverageRank);
-        panel.add(textFieldaverageRank);
+        panel.add(jButtonsalario);
+        panel.add(textFielsalario);
         panel.add(guardar);
         //añadir panel a la ventana
         add(panel);
         guardar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                main.colegio.nuevoEstudiante(textFieldname.getText(), textPhoneNumber.getText(), textFieldemail.getText(), textFieldstudentId.getText(),Double.parseDouble(textFieldaverageRank.getText()), textFieldStreet.getText(), textFieldcity.getText(), textFieldStreet.getText(), textFielPostalCode.getText(), textFielCountry.getText());
+                Main.colegio.nuevoProfesor(textFieldname.getText(), textPhoneNumber.getText(), textFieldemail.getText(), textFielsalario.getText(), textFieldStreet.getText(), textFieldcity.getText(), textFieldStreet.getText(), textFielPostalCode.getText(), textFielCountry.getText());
                 //setear texto
                 textFieldname.setText("");
                 textPhoneNumber.setText("");
                 textFieldemail.setText("");
-                textFieldstudentId.setText("");
-                textFieldaverageRank.setText("");
+                textFielsalario.setText("");
                 textFieldStreet.setText("");
                 textFieldcity.setText("");
                 textFieldStreet.setText("");

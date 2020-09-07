@@ -1,12 +1,8 @@
 package guis;
 
-import ejecutador.main;
-
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class addPerson extends JFrame {
+public class AddPerson extends JFrame {
     // Atributos
     /**
      * crear nueva ventana
@@ -57,7 +53,7 @@ public class addPerson extends JFrame {
      */
     protected JButton guardar = new JButton("Guardar");
 
-    public addPerson() {
+    public AddPerson() {
 
     }
 

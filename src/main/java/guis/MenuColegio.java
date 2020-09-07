@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class menuColegio extends JFrame {
+public class MenuColegio extends JFrame {
     // Atributos
     /**
      * Panel principal
@@ -37,7 +37,7 @@ public class menuColegio extends JFrame {
     private JButton botonSalir;
 
     //constructor
-    public menuColegio() {
+    public MenuColegio() {
         //metodo para iniciar
         iniciar();
         //diseño
@@ -92,7 +92,7 @@ public class menuColegio extends JFrame {
         botonAgregarAlumno.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                addStudent addS = new addStudent();
+                AddStudent addS = new AddStudent();
                 addS.setVisible(true);
             }
         });
@@ -102,7 +102,7 @@ public class menuColegio extends JFrame {
         botonAgregarProfesor.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            addProfessor addP = new addProfessor();
+            AddProfessor addP = new AddProfessor();
             addP.setVisible(true);
             }
         });
@@ -121,7 +121,7 @@ public class menuColegio extends JFrame {
         botonlistaprofes.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                listaProfe p = new listaProfe();
+                ListaProfe p = new ListaProfe();
                 p.oja();
 
             }

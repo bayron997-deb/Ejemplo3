@@ -1,6 +1,6 @@
 package ejecutador;
 
-import guis.menuColegio;
+import guis.MenuColegio;
 import funciones.colegio;
 
 /**
@@ -10,14 +10,14 @@ import funciones.colegio;
  */
 
 
-public class main {
+public class Main {
 
 
     public static colegio colegio = new colegio();
 
 
     public static void main(String[] args) {
-        menuColegio v = new menuColegio();
+        MenuColegio v = new MenuColegio();
         v.setVisible(true);
     }
 }
