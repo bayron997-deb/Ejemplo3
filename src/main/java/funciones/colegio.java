@@ -27,6 +27,10 @@ public class colegio {
     //metodos
     public void nuevoProfesor(String name, String numero, String email, String salario, String calle , String ciudad , String estado, String codigoPostal, String pais) {
         Professor nuevo = new Professor(name,numero,email,salario,calle,ciudad,estado,codigoPostal,pais);
+        nuevo.setName(name);
+        nuevo.setPhoneNumber(numero);
+        nuevo.setSalario(salario);
+        nuevo.setEmailAddress(email);
         nuevo.direccion.setStreet(calle);
         nuevo.direccion.setCity(ciudad);
         nuevo.direccion.setState(estado);
