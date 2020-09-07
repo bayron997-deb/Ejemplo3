@@ -6,8 +6,8 @@ public class ListaAlumno {
     public ListaAlumno() {
     }
     void verListaEstudiantes(){
-        for (int i = 0; i < Main.colegio.listaProfesores.size() ; i++) {
-            System.out.println(Main.colegio.listaProfesores.get(i).toString());
+        for (int i = 0; i < AddPerson.colegio.listaProfesores.size() ; i++) {
+            System.out.println(AddPerson.colegio.listaProfesores.get(i).toString());
         }
     }
 }
