@@ -13,10 +13,10 @@ public class Student extends Person {
     /**
      * promedio notas
      */
-    private String averageRank;
+    private double averageRank;
     //constructores
 
-    public Student(String name1, String numero1, String s, String id, String rank, String name, String numero, String email, String studentID, String averageRank) {
+    public Student(String name, String numero, String email, String studentID, double averageRank, String calle, String ciudad, String estado, String codigoPostal, String pais) {
         this.averageRank = averageRank;
         this.studentID = studentID;
         this.emailAddress = email;
@@ -34,8 +34,12 @@ public class Student extends Person {
     /**
      * ver si puede inscribirse
      */
-    public Boolean isEligibleToRoll() {
-        return true;
+    public String isEligibleToRoll() {
+        if (averageRank > 5) {
+            return "Aceptado";
+        }else{
+            return "rechazado";
+        }
     }
 
     /**
@@ -53,11 +57,11 @@ public class Student extends Person {
         this.studentID = studentID;
     }
 
-    public String getAverageRank() {
+    public double getAverageRank() {
         return averageRank;
     }
 
-    public void setAverageRank(String averageRank) {
+    public void setAverageRank(double averageRank) {
         this.averageRank = averageRank;
     }
     /**
