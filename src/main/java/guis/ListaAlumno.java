@@ -7,7 +7,7 @@ public class ListaAlumno {
     }
     void verListaEstudiantes(){
         for (int i = 0; i < AddPerson.colegio.listaProfesores.size() ; i++) {
-            System.out.println(AddPerson.colegio.listaProfesores.get(i).toString());
+            System.out.println(AddPerson.colegio.listaEstudiantes.get(i).toString());
         }
     }
 }
