@@ -16,14 +16,14 @@ public class AddStudent extends AddPerson {
     /**
      * ingresar promedio
      */
-    private JLabel jLabelaverageRank = new JLabel("ingrese salario");
+    private JLabel jLabelaverageRank = new JLabel("Promedio del estudiante");
     private JTextField textFieldaverageRank = new JTextField(10);
 
     //constructor
     public AddStudent() {
         iniciar();
         //caracterizticas varias de la ventana
-        setTitle("Nuevo profesor");
+        setTitle("Nuevo estudiante");
         setSize(200, 600);
         conf();
     }
