@@ -10,7 +10,7 @@ public class colegio {
     /**
      * arraylist de profesores
      */
-    private List<Professor> listaProfesores = new ArrayList<Professor>();
+    public List<Professor> listaProfesores = new ArrayList<Professor>();
     /**
      * arraylist de estudiantes
      */
@@ -26,7 +26,7 @@ public class colegio {
      */
     //metodos
     public void nuevoProfesor(String name, String numero, String email, String salario, String calle , String ciudad , String estado, String codigoPostal, String pais) {
-        Professor nuevo = new Professor(name,numero,email,salario);
+        Professor nuevo = new Professor(name,numero,email,salario,calle,ciudad,estado,codigoPostal,pais);
         nuevo.direccion.setStreet(calle);
         nuevo.direccion.setCity(ciudad);
         nuevo.direccion.setState(estado);
@@ -39,7 +39,7 @@ public class colegio {
      * Metodo que se encarga de añadir un nuevo estudiante a la lista
      */
     public void nuevoEstudiante(String name, String numero, String email, String studentID, String averageRank, String calle, String ciudad, String estado, String codigoPostal, String pais) {
-        Student nuevo = new Student(name, numero, email, studentID, averageRank);
+        Student nuevo = new Student(name, numero, email, studentID, averageRank, calle,ciudad,estado,codigoPostal,pais);
         nuevo.direccion.setStreet(calle);
         nuevo.direccion.setCity(ciudad);
         nuevo.direccion.setState(estado);

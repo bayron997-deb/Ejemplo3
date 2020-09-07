@@ -121,6 +121,8 @@ public class menuColegio extends JFrame {
         botonlistaprofes.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                listaProfe p = new listaProfe();
+                p.oja();
 
             }
         });

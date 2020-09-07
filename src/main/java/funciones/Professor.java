@@ -20,7 +20,7 @@ public class Professor extends Person {
     }
 
     //constuctores
-    public Professor(String name, String numero, String email, String salario){
+    public Professor(String name1, String numero1, String email1, String s, String calle, String name, String numero, String email, String salario){
         this.name =name;
         this.PhoneNumber= numero;
         this.emailAddress = email;
@@ -36,6 +36,6 @@ public class Professor extends Person {
      */
     @Override
     public String toString() {
-        return super.toString()+" salario: "+salario;
+        return super.toString()+" salario: "+salario+direccion.toString();
     }
 }

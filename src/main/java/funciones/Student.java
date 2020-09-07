@@ -16,7 +16,7 @@ public class Student extends Person {
     private String averageRank;
     //constructores
 
-    public Student(String name, String numero, String email, String studentID, String averageRank) {
+    public Student(String name1, String numero1, String s, String id, String rank, String name, String numero, String email, String studentID, String averageRank) {
         this.averageRank = averageRank;
         this.studentID = studentID;
         this.emailAddress = email;
