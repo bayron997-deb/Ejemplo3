@@ -122,7 +122,7 @@ public class MenuColegio extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ListaProfe p = new ListaProfe();
-                p.oja();
+                p.verListaProfes();
 
             }
         });

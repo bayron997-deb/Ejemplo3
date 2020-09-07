@@ -7,7 +7,7 @@ public class ListaProfe {
     public ListaProfe(){
 
     }
-    public void oja(){
+     void verListaProfes(){
         for (int i = 0; i < Main.colegio.listaProfesores.size() ; i++) {
             System.out.println(Main.colegio.listaProfesores.get(i).toString());
         }
