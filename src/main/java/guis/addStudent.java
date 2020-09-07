@@ -41,7 +41,7 @@ public class addStudent extends addPerson {
         guardar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                main.colegio.nuevoEstudiante(textFieldname.getText(), textPhoneNumber.getText(), textFieldemail.getText(), textFieldstudentId.getText(),textFieldaverageRank.getText(), textFieldStreet.getText(), textFieldcity.getText(), textFieldStreet.getText(), textFielPostalCode.getText(), textFielCountry.getText());
+                main.colegio.nuevoEstudiante(textFieldname.getText(), textPhoneNumber.getText(), textFieldemail.getText(), textFieldstudentId.getText(),Double.parseDouble(textFieldaverageRank.getText()), textFieldStreet.getText(), textFieldcity.getText(), textFieldStreet.getText(), textFielPostalCode.getText(), textFielCountry.getText());
                 //setear texto
                 textFieldname.setText("");
                 textPhoneNumber.setText("");

@@ -10,11 +10,11 @@ public class colegio {
     /**
      * arraylist de profesores
      */
-    List<Professor> listaProfesores = new ArrayList<Professor>();
+   public List<Professor> listaProfesores = new ArrayList<Professor>();
     /**
      * arraylist de estudiantes
      */
-    List<Student> listaEstudiantes = new ArrayList<Student>();
+    public List<Student> listaEstudiantes = new ArrayList<Student>();
 
     //constructores
 
