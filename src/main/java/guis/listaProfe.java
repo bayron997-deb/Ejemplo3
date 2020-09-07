@@ -6,7 +6,6 @@ import javax.swing.*;
 
 public class listaProfe {
     //Atributos
-    JTextField
     public listaProfe(){
 
     }

@@ -10,11 +10,11 @@ public class colegio {
     /**
      * arraylist de profesores
      */
-    public List<Professor> listaProfesores = new ArrayList<Professor>();
+    List<Professor> listaProfesores = new ArrayList<Professor>();
     /**
      * arraylist de estudiantes
      */
-    private List<Student> listaEstudiantes = new ArrayList<Student>();
+    List<Student> listaEstudiantes = new ArrayList<Student>();
 
     //constructores
 
@@ -44,29 +44,17 @@ public class colegio {
      */
     public void nuevoEstudiante(String name, String numero, String email, String studentID, String averageRank, String calle, String ciudad, String estado, String codigoPostal, String pais) {
         Student nuevo = new Student(name, numero, email, studentID, averageRank, calle,ciudad,estado,codigoPostal,pais);
+        nuevo.setName(name);
+        nuevo.setPhoneNumber(numero);
+        nuevo.setStudentID(studentID);
+        nuevo.setAverageRank(averageRank);
+        nuevo.setEmailAddress(email);
         nuevo.direccion.setStreet(calle);
         nuevo.direccion.setCity(ciudad);
         nuevo.direccion.setState(estado);
         nuevo.direccion.setPostalCode(codigoPostal);
         nuevo.direccion.setCountry(pais);
         listaEstudiantes.add(nuevo);
-    }
-
-    /**
-     * lista para ver profesores
-     */
-    public void verprofesores() {
-        for (int i = 0; i <listaProfesores.size() ; i++) {
-            System.out.println(listaProfesores.get(i).toString());
-        }
-    }
-    /**
-     * lista para ver estudiantes
-     */
-    public void verestudiantes(){
-        for (int i = 0; i <listaEstudiantes.size() ; i++) {
-            System.out.println(listaEstudiantes.get(i).toString());
-        }
     }
 
 }
