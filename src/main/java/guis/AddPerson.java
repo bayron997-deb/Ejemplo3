@@ -1,8 +1,11 @@
 package guis;
 
+import funciones.colegio;
+
 import javax.swing.*;
 
 public class AddPerson extends JFrame {
+    public funciones.colegio colegio = new funciones.colegio();
     // Atributos
     /**
      * crear nueva ventana
